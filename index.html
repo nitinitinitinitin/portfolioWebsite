@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <img src="media\imgs\about_me.jpg" alt="Your Icon" class="header-image">
-        <h1>Sandhyakiran Saroj</h1>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#1styear">1st Year</a></li>
-                <li><a href="#2ndyear">2nd Year</a></li>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="header-container">
+            <img src="media\imgs\about_me.jpg" alt="Your Icon" class="header-image"/>
+            <h1>Sandhyakiran Saroj</h1>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item me-2">
+                <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Years
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#first-year">First Year</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#second-year">Second Year</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section id="video-banner">
-        <video autoplay loop muted preload="auto" id="video-background">
-            <source src="media\videos\loop_video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+      <video autoplay loop muted preload="auto" id="video-background">
+        <source src="media\videos\loop_video2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </section>
 
     <main>
-        <section id="about">
-            <h2 class="section-heading">About Me</h2>
-            <div class="about-container about-container-1">
-              <div class="about-details">
-                <img src="media\imgs\about_me.jpg" alt="About Me Image" width="300" style="border-radius: 8px;" class="about-image">
-                <div class="about-text">
-                  <h3>Lorem, ipsum dolor.</h3>
-                  <p>I am a graduate in Psychology and English Literature, driven by a deep curiosity to understand human behavior and the underlying reasons behind people's actions. This curiosity has shaped my belief that individuals are profoundly influenced by their environment and early childhood experiences. I firmly believe that schools play a pivotal role in shaping a person’s character, building confidence, and unlocking their potential.
-                      Coming from an underprivileged background, I am deeply grateful for the guidance of Teach For India fellows, who showed me that learning can be enjoyable and that education is a powerful tool to transform dreams into reality. This transformative experience not only broadened my perspective but also inspired me to pursue the Teach For India fellowship, as I want to play a pivotal role in providing quality education and unlocking opportunities for children.</p>
+      <section id="about">
+        <h2 class="section-heading">About Me</h2>
+        <div class="about-container about-container-1">
+          <div class="about-details">
+            <img src="media\imgs\about_me.jpg" alt="About Me Image" width="300" style="border-radius: 8px" class="about-image"/>
+            <div class="about-text">
+              <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="text-container">
+                      <h3>
+                        Lorem ipsum dolor sit.
+                      </h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorum exercitationem eos vel temporibus fugiat debitis nam quis provident asperiores, quisquam ea nihil corporis molestias a illo alias voluptate facere qui. Laborum cupiditate nesciunt temporibus fugiat dolores molestias voluptatibus recusandae, asperiores officiis, odio quis repellendus placeat ipsum. Vero, totam blanditiis!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <div class="text-container">
+                    <h3>
+                      Lorem ipsum dolor.
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorum exercitationem eos vel temporibus fugiat debitis nam quis provident asperiores, quisquam ea nihil corporis molestias a illo alias voluptate facere qui. Laborum cupiditate nesciunt temporibus fugiat dolores molestias voluptatibus recusandae, asperiores officiis, odio quis repellendus placeat ipsum. Vero, totam blanditiis!</p>
+                  </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="10000">
+                  <div class="text-container">
+                    <h3>
+                      Lorem ipsum.
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio dolorum exercitationem eos vel temporibus fugiat debitis nam quis provident asperiores, quisquam ea nihil corporis molestias a illo alias voluptate facere qui. Laborum cupiditate nesciunt temporibus fugiat dolores molestias voluptatibus recusandae, asperiores officiis, odio quis repellendus placeat ipsum. Vero, totam blanditiis!</p>
+                  </div>
+                  </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
-            <div class="about-container about-container-2">
-              <div class="about-details">
-                <div class="about-text">
-                  <h3>Lorem, ipsum dolor.</h3>
-                  <p>I am a graduate in Psychology and English Literature, driven by a deep curiosity to understand human behavior and the underlying reasons behind people's actions. This curiosity has shaped my belief that individuals are profoundly influenced by their environment and early childhood experiences. I firmly believe that schools play a pivotal role in shaping a person’s character, building confidence, and unlocking their potential.
-                      Coming from an underprivileged background, I am deeply grateful for the guidance of Teach For India fellows, who showed me that learning can be enjoyable and that education is a powerful tool to transform dreams into reality. This transformative experience not only broadened my perspective but also inspired me to pursue the Teach For India fellowship, as I want to play a pivotal role in providing quality education and unlocking opportunities for children.</p>
-                </div>
-                  <img src="media\imgs\about_me.jpg" alt="About Me Image" width="300" style="border-radius: 8px;" class="about-image">
-              </div>
-            </div>
-            <div class="about-container about-container-3">
-              <div class="about-details">
-                <img src="media\imgs\about_me.jpg" alt="About Me Image" width="300" style="border-radius: 8px;" class="about-image">
-                <div class="about-text">
-                  <h3>Lorem, ipsum dolor.</h3>
-                  <p>I am a graduate in Psychology and English Literature, driven by a deep curiosity to understand human behavior and the underlying reasons behind people's actions. This curiosity has shaped my belief that individuals are profoundly influenced by their environment and early childhood experiences. I firmly believe that schools play a pivotal role in shaping a person’s character, building confidence, and unlocking their potential.
-                      Coming from an underprivileged background, I am deeply grateful for the guidance of Teach For India fellows, who showed me that learning can be enjoyable and that education is a powerful tool to transform dreams into reality. This transformative experience not only broadened my perspective but also inspired me to pursue the Teach For India fellowship, as I want to play a pivotal role in providing quality education and unlocking opportunities for children.</p>
-                </div>
-              </div>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="projects">
-          <h2 class="section-heading" >Projects</h2>
+      <section id="projects">
+        <h2 class="section-heading">Projects</h2>
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="carousel-item-container">
-                  <img src="media\imgs\kid_1.jpg"  alt="kid_1">
+                <img src="media\imgs\kid_1.jpg" alt="kid_1" />
                 <div class="carousel-text">
                   <h1>something</h1>
                 </div>
@@ -79,13 +115,13 @@
             </div>
             <div class="carousel-item">
               <div class="carousel-item-container">
-                <img src="media\imgs\kid_2.jpg"  alt="kid_2">
+                <img src="media\imgs\kid_2.jpg" alt="kid_2" />
                 <h1>something</h1>
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-item-container">
-                <img src="media\imgs\kid_3.jpg"  alt="kid_3">
+                <img src="media\imgs\kid_3.jpg" alt="kid_3" />
                 <h1>something</h1>
               </div>
             </div>
@@ -100,14 +136,12 @@
           </button>
         </div>
       </section>
-        
-        
     </main>
 
     <footer>
-        <p>© 2025 Sandhya Kiran. All rights reserved.</p>
+      <p>© 2025 Sandhya Kiran. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
