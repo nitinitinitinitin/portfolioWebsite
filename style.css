@@ -60,11 +60,11 @@ nav {
 
 .nav-links {
     display: flex;
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: flex-end; /* Align links to the right */
-
+    justify-content: flex-end;
+    padding-inline: 1rem;
 }
 
 .nav-links li {
@@ -104,7 +104,9 @@ nav {
 
 /* Main Section Styling */
 main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 main h2 {
@@ -123,23 +125,42 @@ main h2 {
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    background-color: #cbe698e5; /* Light gray background */
+    justify-content: space-evenly;
+    background-color: #cbe698e5;
     padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.384);
+    border-radius: 1rem;
 }
 
-/* Paragraph Styling */
-.about-container p {
-    flex: 1; /* Allows paragraph to take remaining space */
-    margin: 0;
-    text-align: left;
+.about-container-2{
+    background-color: #aee7e7e5;
 }
 
+.about-details {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 
+.carousel-item-container {
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+}
 
+.carousel-item-container h1{
+    align-self: center;
+}
+
+.carousel-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel-item-container img{
+
+}
 
 
 
