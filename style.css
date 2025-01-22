@@ -367,3 +367,36 @@ footer {
 .new-container.bonding-over-lunch p {
     font-size: 1rem; /* Font size */
 }
+
+/* Art Sessions Container */
+.art-sessions-container {
+  display: flex; /* Flexbox layout */
+  justify-content: space-between; /* Space between containers */
+  gap: 20px; /* Gap between containers */
+}
+
+.art-session {
+  flex: 1; /* Make containers of the same scale */
+  max-width: 45%; /* Smaller size */
+  background-color: #f9f9f9; /* Background color */
+  padding: 20px; /* Padding inside the container */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center-align text */
+}
+
+.art-session img {
+  max-width: 80%; /* Reduced width */
+  height: auto; /* Auto height */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px; /* Margin at the bottom */
+}
+
+.art-session h3 {
+  font-size: 1.2rem; /* Reduced font size */
+  margin-bottom: 10px; /* Margin at the bottom */
+}
+
+.art-session p {
+  font-size: 0.9rem; /* Reduced font size */
+  color: #333; /* Text color */
+}
