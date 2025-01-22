@@ -1,9 +1,16 @@
 // JavaScript to make navigation links fixed and highlight the active section link
 window.addEventListener('scroll', function () {
-    const header = document.querySelector('header');
-    const navLinks = document.querySelector('.nav-links');
+    const headerContainer = document.querySelector('.header-container');
+    const navLinks = document.querySelector('.navbar-nav');
     const sections = document.querySelectorAll('section');
-    const links = document.querySelectorAll('.nav-links a');
+    const links = document.querySelectorAll('.navbar-nav a');
+
+    // Toggle transparent class based on scroll position
+    if (window.scrollY > 50) {
+        headerContainer.classList.add('transparent');
+    } else {
+        headerContainer.classList.remove('transparent');
+    }
 
     // When scroll reaches the header's position, make nav links fixed
     if (window.scrollY > header.offsetHeight) {
@@ -18,7 +25,7 @@ window.addEventListener('scroll', function () {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
 
-        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        if (window.scrollY >= sectionTop - sectionHeight / 3 && window.scrollY < sectionTop + sectionHeight - sectionHeight / 3) {
             currentSection = section.getAttribute('id');
         }
     });
