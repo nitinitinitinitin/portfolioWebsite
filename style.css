@@ -27,7 +27,7 @@ header {
     gap: 10px; /* Space between image and name */
 }
 
-.header-container h1{
+.header-container h1 {
     font-family: "Arial", sans-serif;
     font-size: 1.5rem;
 }
@@ -53,7 +53,6 @@ header h1 {
 nav {
     margin-left: auto; /* Push the navigation to the right */
 }
-
 
 /* Video Banner */
 #video-banner {
@@ -92,7 +91,6 @@ main h2 {
     margin-top: 40px;
 }
 
-/* Flexbox Layout for Image and Paragraph */
 .about-container {
     display: flex;
     align-items: center;
@@ -100,10 +98,6 @@ main h2 {
     background-color: #cbe698e5;
     padding: 20px;
     border-radius: 1rem;
-}
-
-.about-container-2{
-    background-color: #aee7e7e5;
 }
 
 .about-details {
@@ -114,26 +108,53 @@ main h2 {
     gap: 2rem;
 }
 
+/* Carousel Section */
 .carousel-item-container {
     display: flex;
     height: 80vh;
     justify-content: space-around;
 }
 
-.carousel-item-container h1{
+.carousel-item-container h1 {
     align-self: center;
 }
 
-.carousel-text{
+.carousel-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.img-cover img 
-{
- max-width: 240px;
- max-height: 320px;
+.img-cover img {
+    max-width: 240px;
+    max-height: 320px;
+}
+
+/* Academic Section */
+#academic {
+    margin-top: 40px;
+}
+
+.academic-container {
+    background-color: #fbfd93; /* Yellow */
+}
+
+/* Culture Section */
+#culture {
+    margin-top: 40px;
+}
+
+.culture-container {
+    background-color: #ffc6fe; /* Yellow */
+}
+
+/* Leading Self India Section */
+#leading-self-india {
+    margin-top: 40px;
+}
+
+.leading-container {
+    background-color: #9fe79f; /* Lime Green */
 }
 
 /* Responsive Design for Smaller Screens */
@@ -160,7 +181,7 @@ main h2 {
         text-align: left; /* Keep the text left-aligned */
     }
 
-    .about-details{
+    .about-details {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -187,13 +208,10 @@ main h2 {
         margin-top: 20px; /* Add spacing above the paragraph */
     }
 
-    
     /* Adjust the video banner for smaller screens */
     #video-banner {
         height: 60vh; /* Adjust the video height for mobile */
     }
-    
-
 }
 
 /* Footer */
