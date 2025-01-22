@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth; /* Smooth scrolling for links */
-    font-family: "Lexend", serif;
+    font-family: "Arial", sans-serif;
 }
 
 /* Header Styling */
@@ -28,7 +28,7 @@ header {
 }
 
 .header-container h1{
-    font-family: "Macondo", serif;
+    font-family: "Arial", sans-serif;
     font-size: 1.5rem;
 }
 
