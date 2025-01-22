@@ -103,12 +103,12 @@
         </div>
       </section>
 
-      <section id="exposure">
+      <section id="exposure" class="exposure-section">
         <h2>Exposure</h2>
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <div id="exposureCarousel" class="carousel slide exposure-slider" data-bs-ride="carousel">
+              <div id="exposureCarousel" class="carousel slide exposure-slider card" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="media/exposure/imgs/collectivecarnival_2.jpeg" class="d-block w-100" alt="Collective Carnival 1">
@@ -149,6 +149,8 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-md-4">
               <div class="card">
                 <img src="media/exposure/imgs/muso_waterfilteration.jpeg" class="card-img-top" alt="image_5">
@@ -168,7 +170,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div id="exposureCarousel2" class="carousel slide exposure-slider" data-bs-ride="carousel">
+              <div id="exposureCarousel2" class="carousel slide exposure-slider card" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="media/exposure/imgs/Nehrusciencecentre.jpg" class="d-block w-100" alt="Nehruscience Centre">
@@ -191,7 +193,6 @@
                 </div>
               </div>
             </div>
-            <!-- Add more cards as needed -->
           </div>
         </div>
       </section>
@@ -211,86 +212,96 @@
       <section id="culture">
         <div class="container culture-container">
           <h2 class="section-heading">Culture</h2>
-          <!-- Student Showcase Section -->
-          <div class="new-container">
-            <h3>Student Showcase</h3>
-            <img src="path/to/student_showcase_image.jpg" alt="Student Showcase">
-            <p>Description about the student showcase event.</p>
-          </div>
-          <!-- Art Sessions Section -->
-          <section id="art-sessions">
-            <div class="container culture-container">
-              <h2 class="section-heading" style="text-align: center;">Art Sessions</h2> <!-- Centered heading -->
-              <div class="new-container art-sessions-container">
-                <div class="art-session">
-                  <div id="artSessionsCarousel" class="carousel slide exposure-slider" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="media\culture\imgs\shifa_art_4.jpeg" class="d-block w-100" alt="Art Session 1">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media\culture\imgs\shifa_art_2.jpeg" class="d-block w-100" alt="Art Session 2">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media\culture\imgs\shifa_art_3.jpeg" class="d-block w-100" alt="Art Session 3">
+          <div class="row">
+            <!-- Student Showcase Section -->
+            <div class="col-md-6">
+              <div class="new-container">
+                <h3>Student Showcase</h3>
+                <img src="path/to/student_showcase_image.jpg" alt="Student Showcase">
+                <p>Description about the student showcase event.</p>
+              </div>
+            </div>
+            <!-- Art Sessions Section -->
+            <div class="col-md-6">
+              <section id="art-sessions">
+                <div class="new-container">
+                  <h3>Art Sessions</h3> <!-- Add heading here -->
+                  <div class="art-sessions-container">
+                    <div class="art-session">
+                      <div id="artSessionsCarousel" class="carousel slide exposure-slider" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="media\culture\imgs\shifa_art_4.jpeg" class="d-block w-100" alt="Art Session 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="media\culture\imgs\shifa_art_2.jpeg" class="d-block w-100" alt="Art Session 2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="media\culture\imgs\shifa_art_3.jpeg" class="d-block w-100" alt="Art Session 3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#artSessionsCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#artSessionsCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        <h4>Title of the Paragraph 2</h4>
+                        <p>Description about the art sessions with image slider.</p>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#artSessionsCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#artSessionsCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                    <h4>Title of the Paragraph 2</h4>
-                    <p>Description about the art sessions with image slider.</p>
+                    <div class="art-session">
+                      <img src="media\culture\imgs\shifa_art.jpeg" alt="Description of image 2">
+                      <h4>Title of the Paragraph 2</h4>
+                      <p>This is the paragraph content 2.</p>
+                    </div>
                   </div>
-                 
                 </div>
-                <div class="art-session">
-                  <img src="media\culture\imgs\shifa_art.jpeg" alt="Description of image 2">
-                  <h4>Title of the Paragraph 2</h4>
-                  <p>This is the paragraph content 2.</p>
+              </section>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Bonding over Lunch Section -->
+            <div class="col-md-6">
+              <div class="new-container">
+                <h2 class="section-heading" style="text-align: center;">Bonding over Lunch</h2>
+                <div class="new-container bonding-over-lunch">
+                  <!-- New Container 1 -->
+                  <div class="new-container">
+                    <img src="media\culture\imgs\classlunch_2.jpeg" alt="Description of image 1">
+                    <h4>Title of the Paragraph 1</h4>
+                    <p>This is the paragraph content 1.</p>
+                  </div>
+                  <!-- New Container 2 -->
+                  <div class="new-container">
+                    <img src="media\culture\imgs\classlunch.jpeg" alt="Description of image 2">
+                    <h4>Title of the Paragraph 2</h4>
+                    <p>This is the paragraph content 2.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- Bonding over Lunch Section -->
-          <div class="new-container">
-            <h2 class="section-heading" style="text-align: center;">Bonding over Lunch</h2>
-          </div>
-          <div class="new-container bonding-over-lunch">
-            <!-- New Container 1 -->
-            <div class="new-container">
-              <img src="media\culture\imgs\classlunch_2.jpeg" alt="Description of image 1">
-              <h4>Title of the Paragraph 1</h4>
-              <p>This is the paragraph content 1.</p>
-            </div>
-            <!-- New Container 2 -->
-            <div class="new-container">
-              <img src="media\culture\imgs\classlunch.jpeg" alt="Description of image 2">
-              <h4>Title of the Paragraph 2</h4>
-              <p>This is the paragraph content 2.</p>
-            </div>
-          </div>
-          <div class="new-container">
-            <h2 class="section-heading" style="text-align: center;">In for a Treat</h2>
-          </div>
-          <!-- In for Treat Section -->
-          <div class="new-container in-for-treat">
-             <!-- Fixed heading -->
-            <!-- First Container -->
-            <div class="new-container">
-              <img src="media\culture\imgs\treat001.jpeg" alt="First Image">
-              <h4>First Title</h4>
-              <p>First paragraph content.</p>
-            </div>
-            <!-- Second Container -->
-            <div class="new-container">
-              <img src="media\culture\imgs\treat001.jpeg" alt="Second Image">
-              <h4>Second Title</h4>
-              <p>Second paragraph content.</p>
+            <!-- In for Treat Section -->
+            <div class="col-md-6">
+              <div class="new-container">
+                <h2 class="section-heading" style="text-align: center;">In for a Treat</h2>
+                <div class="new-container in-for-treat">
+                  <!-- First Container -->
+                  <div class="new-container card">
+                    <img src="media\culture\imgs\treat001.jpeg" alt="First Image">
+                    <h4>First Title</h4>
+                    <p>First paragraph content.</p>
+                  </div>
+                  <!-- Second Container -->
+                  <div class="new-container card">
+                    <img src="media\culture\imgs\treat001.jpeg" alt="Second Image">
+                    <h4>Second Title</h4>
+                    <p>Second paragraph content.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

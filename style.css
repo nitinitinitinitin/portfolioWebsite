@@ -331,8 +331,13 @@ footer {
     font-size: 0.8rem; /* Smaller font size */
 }
 
+.new-container.in-for-treat .card {
+    width: fit-content; /* Fit the size of the image */
+    margin: auto; /* Center the card */
+}
+
 .new-container.in-for-treat img {
-    max-width: 70%; /* Smaller image size */
+    max-width: 50%; /* Smaller image size */
     height: auto; /* Auto height */
 }
 
@@ -389,11 +394,12 @@ footer {
   height: auto; /* Auto height */
   border-radius: 8px; /* Rounded corners */
   margin-bottom: 10px; /* Margin at the bottom */
+  margin-left: 10px;
 }
 
 .art-session h3 {
   font-size: 1.2rem; /* Reduced font size */
-  margin-bottom: 10px; /* Margin at the bottom */
+  margin-bottom: 30px; /* Margin at the bottom */
 }
 
 .art-session p {
