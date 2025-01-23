@@ -68,6 +68,13 @@ nav {
     color: #000; /* Change this to your desired text color */
 }
 
+.navbar-nav .nav-link.active {
+  background-color: transparent; /* Remove background highlight */
+  color: #fff; /* Bright white text color */
+  border-bottom: 2px solid #fff; /* Add a line under the highlighted text */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+}
+
 /* Video Banner */
 #video-banner {
     position: relative; /* Position relative to parent */
@@ -175,7 +182,7 @@ main h2 {
 }
 
 .culture-container {
-    background-color: #ffffff; /* Background color */
+    background-color: #ffffff; /* Background color for the entire culture section */
 }
 
 /* Leading Self India Section */
@@ -310,12 +317,15 @@ footer {
 .new-container {
     margin-top: 20px; /* Margin at the top */
     text-align: center; /* Center-align text */
+    background-color: #f0f0f0; /* Default background color for new containers */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
 }
 
 .new-container img {
     max-width: 100%; /* Full width */
     height: auto; /* Auto height */
-    border-radius: 2px; /* Rounded corners */
+    border-radius: 8px; /* Rounded corners */
     margin-bottom: 10px; /* Margin at the bottom */
 }
 
@@ -329,23 +339,35 @@ footer {
     justify-content: space-between; /* Space items between */
     gap: 20px; /* Adjust the gap as needed */
     font-size: 0.8rem; /* Smaller font size */
+    background-color: #e0f7fa; /* Set container color to light cyan */
 }
 
-.new-container.in-for-treat .card {
-    width: fit-content; /* Fit the size of the image */
-    margin: auto; /* Center the card */
+.new-container.in-for-treat .new-container {
+    flex: 1; /* Make containers of the same scale */
+    max-width: 90%; /* Smaller size */
+    background-color: #e0f7fa; /* Ensure background color is applied */
+    padding: 10px; /* Padding inside the container */
 }
 
 .new-container.in-for-treat img {
-    max-width: 50%; /* Smaller image size */
+    width: 100%; /* Full width */
     height: auto; /* Auto height */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Margin at the bottom */
+}
+
+.new-container.in-for-treat .new-container img {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Margin at the bottom */
 }
 
 .new-container.bonding-over-lunch {
     background-color: lavender; /* Set container color to lavender */
     padding: 20px; /* Padding inside the container */
     border-radius: 8px; /* Rounded corners */
-    color: white; /* Text color */
+    color: rgb(10, 10, 10); /* Text color */
     display: flex; /* Flexbox layout */
     justify-content: space-between; /* Space between containers */
     gap: 20px; /* Gap between containers */
@@ -353,12 +375,12 @@ footer {
 
 .new-container.bonding-over-lunch .new-container {
     flex: 1; /* Make containers of the same scale */
-    max-width: 45%; /* Smaller size */
+    max-width: 95%; /* Smaller size */
     background-color: lavender; /* Ensure background color is applied */
 }
 
 .new-container.bonding-over-lunch img {
-    max-width: 80%; /* Max width */
+    max-width: 100%; /* Max width */
     height: auto; /* Auto height */
     border-radius: 8px; /* Rounded corners */
     margin-bottom: 10px; /* Margin at the bottom */
@@ -390,11 +412,11 @@ footer {
 }
 
 .art-session img {
-  max-width: 80%; /* Reduced width */
-  height: auto; /* Auto height */
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
   border-radius: 8px; /* Rounded corners */
   margin-bottom: 10px; /* Margin at the bottom */
-  margin-left: 10px;
 }
 
 .art-session h3 {
