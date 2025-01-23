@@ -137,6 +137,12 @@ main h2 {
     color: #666;
 }
 
+.about-image {
+    border-radius: 8px;
+    width: 300px; /* Set a fixed width */
+    max-width: 25%; /* Ensure it is responsive */
+}
+
 /* Academic Section */
 #academic {
     margin-top: 40px;
@@ -144,6 +150,16 @@ main h2 {
 
 .academic-container {
     background-color: #fbfd93;
+}
+
+.academic-container .image-container img {
+    height: 300px; /* Set the height to match the slider */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 8px; /* Apply border-radius */
+}
+
+.academic-image {
+    border-radius: 8px;
 }
 
 /* Culture Section */
@@ -275,6 +291,53 @@ main h2 {
 }
 
 .goal-setting-image:hover .overlay {
+    opacity: 1;
+}
+
+/* Overlay for Image and Slider */
+.image-container {
+    position: relative;
+}
+
+.image-container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Set the height of the overlay bar */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; /* Set the height of the overlay bar */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.carousel-item:hover .overlay {
     opacity: 1;
 }
 
