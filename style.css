@@ -1,442 +1,353 @@
 /* Reset */
 body, html {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    scroll-behavior: smooth; /* Smooth scrolling for links */
-    font-family: "Arial", sans-serif; /* Set default font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Arial", sans-serif;
 }
 
 /* Header Styling */
 header {
-    background-color: rgb(30, 30, 31); /* Set header background color to blue */
-    padding: 20px; /* Padding inside the header */
-    justify-content: space-between; /* Space between icon/name and navigation */
-    align-items: center; /* Align items vertically */
-    position: fixed; /* Sticks to the top of the page */
-    top: 0; /* Position at the top */
-    width: 100%; /* Full-width header */
-    z-index: 10; /* Ensure header stays on top */
-    color: white; /* Text color */
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    background-color: rgb(30, 30, 31);
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    color: white;
+    box-sizing: border-box;
 }
-
-
 
 .header-container {
-    display: flex; /* Flexbox layout */
-    align-items: center; /* Align items vertically */
-    gap: 10px; /* Space between image and name */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-
 .header-container h1 {
-    font-family: "Arial", sans-serif; /* Font family */
-    font-size: 1.5rem; /* Font size */
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
 }
 
 .header-image {
-    width: 50px; /* Size of the circular image */
-    height: 50px; /* Height of the circular image */
-    border-radius: 50%; /* Makes the image circular */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 header h1 {
-    font-family: 'Arial', sans-serif; /* Font family */
-    font-weight: 700; /* Font weight */
-    font-size: 1.2rem; /* Adjust size */
-    color: white; /* Text color */
-    margin: 0; /* Remove default margin */
-    white-space: nowrap; /* Prevent wrapping */
-    overflow: hidden; /* Prevent overflow */
-    text-overflow: ellipsis; /* Add ellipsis if the text overflows */
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Navigation Links */
 nav {
-    margin-left: auto; /* Push the navigation to the right */
+    margin-left: auto;
 }
 
 .navbar-nav {
-    margin-left: auto; /* Push the navigation to the right */
-    opacity: 1; /* Ensure navbar items stay visible */
-}
-
-/* Add this CSS to style the active navbar item */
-.navbar-nav .active {
-    background-color: #ddd; /* Change this to your desired highlight color */
-    color: #000; /* Change this to your desired text color */
+    margin-left: auto;
+    opacity: 1;
 }
 
 .navbar-nav .nav-link.active {
-  background-color: transparent; /* Remove background highlight */
-  color: #fff; /* Bright white text color */
-  border-bottom: 2px solid #fff; /* Add a line under the highlighted text */
-  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 /* Video Banner */
 #video-banner {
-    position: relative; /* Position relative to parent */
-    width: 100%; /* Full width */
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Hide overflow */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #video-background {
-    position: absolute; /* Position absolute to parent */
-    top: 0; /* Position at the top */
-    left: 0; /* Position at the left */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    object-fit: cover; /* Make the video fill the entire screen */
-    z-index: -1; /* Send the video behind other content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* Main Section Styling */
 main {
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Column layout */
-    gap: 4rem; /* Gap between sections */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 main h2 {
-    font-family: 'Arial', sans-serif; /* Font family */
-    font-size: 2rem; /* Adjust font size */
-    color: #333; /* Text color */
-    margin-bottom: 10px; /* Add spacing if needed */
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 /* About Section */
 #about {
-    margin-top: 40px; /* Margin at the top */
+    margin-top: 40px;
 }
 
 .about-container {
-    display: flex; /* Flexbox layout */
-    align-items: center; /* Align items vertically */
-    justify-content: space-evenly; /* Space items evenly */
-    background-color: #cbe698e5; /* Background color */
-    padding: 20px; /* Padding inside the container */
-    border-radius: 1rem; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #cbe698e5;
+    padding: 20px;
+    border-radius: 1rem;
 }
 
 .about-details {
-    display: flex; /* Flexbox layout */
-    width: 80vw; /* Width */
-    justify-content: center; /* Center items */
-    align-items: center; /* Align items vertically */
-    gap: 2rem; /* Gap between items */
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 .about-container-1 .about-text {
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Column layout */
-    gap: 1rem; /* Gap between items */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .about-container-1 .about-text h3 {
-    font-size: 1.5rem; /* Font size */
-    color: #333; /* Text color */
+    font-size: 1.5rem;
+    color: #333;
 }
 
 .about-container-1 .about-text p {
-    font-size: 1rem; /* Font size */
-    color: #666; /* Text color */
-}
-
-/* Carousel Section */
-.carousel-item-container {
-    display: flex; /* Flexbox layout */
-    height: 80vh; /* Height */
-    justify-content: space-around; /* Space items around */
-}
-
-.carousel-item-container h1 {
-    align-self: center; /* Align self to center */
-}
-
-.carousel-text {
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Column layout */
-    justify-content: center; /* Center items */
-}
-
-.img-cover img {
-    max-width: 240px; /* Max width */
-    max-height: 320px; /* Max height */
+    font-size: 1rem;
+    color: #666;
 }
 
 /* Academic Section */
 #academic {
-    margin-top: 40px; /* Margin at the top */
+    margin-top: 40px;
 }
 
 .academic-container {
-    background-color: #fbfd93; /* Background color */
+    background-color: #fbfd93;
 }
 
 /* Culture Section */
 #culture {
-    margin-top: 40px; /* Margin at the top */
+    margin-top: 40px;
 }
 
 .culture-container {
-    background-color: #ffffff; /* Background color for the entire culture section */
+    background-color: #ffffff;
 }
 
 /* Leading Self India Section */
 #leading-self-india {
-    margin-top: 40px; /* Margin at the top */
+    margin-top: 40px;
 }
 
 .leading-container {
-    background-color: #9fe79f; /* Background color */
+    background-color: #9fe79f;
 }
 
 /* Exposure Slider */
 .exposure-slider {
-    position: relative; /* Position relative to parent */
-    width: 100%; /* Full width */
-    overflow: hidden; /* Hide overflow */
-    border-radius: 0.5rem; /* Reduced border-radius */
-    height: 100%; /* Ensure the slider matches the height of other containers */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    height: 100%;
 }
 
 .exposure-slider img {
-    width: 100%; /* Full width */
-    display: block; /* Display block */
+    width: 100%;
+    display: block;
 }
 
 .exposure-slider .carousel-control-prev,
 .exposure-slider .carousel-control-next {
-    position: absolute; /* Position absolute to parent */
-    top: 50%; /* Position at the top */
-    transform: translateY(-50%); /* Center vertically */
-    width: auto; /* Remove width to eliminate the semi-transparent bars */
-    height: auto; /* Remove height to eliminate the semi-transparent bars */
-    background: none; /* Remove background to eliminate the semi-transparent bars */
-    color: white; /* Text color */
-}
-
-/* Image Hover Effect */
-.image-container {
-    position: relative; /* Position relative to parent */
-    display: inline-block; /* Inline-block layout */
-}
-
-.image-container img {
-    display: block; /* Display block */
-    width: 100%; /* Full width */
-    height: auto; /* Auto height */
-}
-
-.image-container .image-overlay {
-    position: absolute; /* Position absolute to parent */
-    bottom: 0; /* Position at the bottom */
-    left: 0; /* Position at the left */
-    width: 100%; /* Full width */
-    background: rgba(0, 0, 0, 0.5); /* Transparent bar */
-    color: white; /* Text color */
-    padding: 10px; /* Padding inside the overlay */
-    text-align: left; /* Text alignment */
-    opacity: 0; /* Initial opacity */
-    transition: opacity 0.3s ease; /* Smooth transition for opacity */
-}
-
-.image-container:hover .image-overlay {
-    opacity: 1; /* Show overlay on hover */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    background: none;
+    color: white;
 }
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
-    /* Header */
     header {
-        flex-direction: row; /* Keep icon and text in a row */
-        padding: 10px; /* Adjust padding */
-        justify-content: space-between; /* Ensure space between icon and h1 */
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-between;
     }
 
     .header-container {
-        gap: 10px; /* Space between image and name */
+        gap: 10px;
     }
 
     .header-image {
-        width: 40px; /* Adjust image size */
-        height: 40px; /* Adjust image height */
+        width: 40px;
+        height: 40px;
     }
 
     header h1 {
-        font-size: 1.5rem; /* Adjust font size */
-        white-space: normal; /* Allow wrapping */
-        text-align: left; /* Keep the text left-aligned */
+        font-size: 1.5rem;
+        white-space: normal;
+        text-align: left;
     }
 
     .about-details {
-        display: flex; /* Flexbox layout */
-        flex-direction: column; /* Column layout */
-        align-items: center; /* Center-align content */
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* About Section */
     #about {
-        padding: 20px; /* Padding inside the section */
-        margin: 20px 0; /* Margin at the top and bottom */
+        padding: 20px;
+        margin: 20px 0;
     }
 
     .about-container {
-        flex-direction: column; /* Stack image and paragraph vertically */
-        align-items: center; /* Center-align content */
-        text-align: center; /* Center text inside the paragraph */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .about-image {
-        width: 80%; /* Make the image responsive */
-        max-width: 300px; /* Set a maximum width */
+        width: 80%;
+        max-width: 300px;
     }
 
     .about-container p {
-        margin-top: 20px; /* Add spacing above the paragraph */
+        margin-top: 20px;
     }
 
-    /* Adjust the video banner for smaller screens */
     #video-banner {
-        height: 60vh; /* Adjust the video height for mobile */
+        height: 60vh;
     }
 }
 
 /* Footer */
 footer {
-    text-align: center; /* Center-align text */
-    padding: 10px; /* Padding inside the footer */
-    background-color: #333; /* Background color */
-    color: white; /* Text color */
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
 }
 
 /* New Content Below Button */
 .new-container {
-    margin-top: 20px; /* Margin at the top */
-    text-align: center; /* Center-align text */
-    background-color: #f0f0f0; /* Default background color for new containers */
-    padding: 20px; /* Padding inside the container */
-    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .new-container img {
-    max-width: 100%; /* Full width */
-    height: auto; /* Auto height */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 10px; /* Margin at the bottom */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .new-container p {
-    font-size: 1rem; /* Font size */
-    color: #333; /* Text color */
+    font-size: 1rem;
+    color: #333;
 }
 
 .new-container.in-for-treat {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Space items between */
-    gap: 20px; /* Adjust the gap as needed */
-    font-size: 0.8rem; /* Smaller font size */
-    background-color: #e0f7fa; /* Set container color to light cyan */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 0.8rem;
+    background-color: #e0f7fa;
 }
 
 .new-container.in-for-treat .new-container {
-    flex: 1; /* Make containers of the same scale */
-    max-width: 90%; /* Smaller size */
-    background-color: #e0f7fa; /* Ensure background color is applied */
-    padding: 10px; /* Padding inside the container */
+    flex: 1;
+    max-width: 90%;
+    background-color: #e0f7fa;
+    padding: 10px;
 }
 
 .new-container.in-for-treat img {
-    width: 100%; /* Full width */
-    height: auto; /* Auto height */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 10px; /* Margin at the bottom */
-}
-
-.new-container.in-for-treat .new-container img {
-    width: 100%; /* Full width */
-    height: auto; /* Auto height */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 10px; /* Margin at the bottom */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .new-container.bonding-over-lunch {
-    display: flex; /* Flexbox layout */
-    align-items: center; /* Center-align items vertically */
-    gap: 20px; /* Gap between image and content */
-    background-color: lavender; /* Set container color to lavender */
-    padding: 20px; /* Padding inside the container */
-    border-radius: 8px; /* Rounded corners */
-    color: rgb(10, 10, 10); /* Text color */
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Space between containers */
-    gap: 20px; /* Gap between containers */
-}
-
-.new-container.bonding-over-lunch .new-container {
-    flex: 1; /* Make containers of the same scale */
-    max-width: 95%; /* Smaller size */
-    background-color: lavender; /* Ensure background color is applied */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: lavender;
+    padding: 20px;
+    border-radius: 8px;
+    color: rgb(10, 10, 10);
+    justify-content: space-between;
 }
 
 .new-container.bonding-over-lunch img {
-    flex: 1; /* Image takes up one part of the space */
-    max-width: 50%; /* Ensure image does not exceed half the container width */
-    width: 50%; /* Set image width to 50% */
-    height: auto; /* Auto height */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 10px; /* Margin at the bottom */
+    flex: 1;
+    max-width: 50%;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .new-container.bonding-over-lunch .content {
-    flex: 2; /* Content takes up two parts of the space */
-    display: flex; /* Flexbox layout */
-    flex-direction: column; /* Column layout */
-    gap: 10px; /* Gap between title and paragraph */
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .new-container.bonding-over-lunch h4 {
-    font-size: 1.2rem; /* Font size */
-    margin-top: 10px; /* Margin at the top */
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 .new-container.bonding-over-lunch p {
-    font-size: 1rem; /* Font size */
+    font-size: 1rem;
 }
 
-/* Art Sessions Container */
 .art-sessions-container {
-  display: flex; /* Flexbox layout */
-  justify-content: space-between; /* Space between containers */
-  gap: 20px; /* Gap between containers */
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure images wrap to the next line if necessary */
 }
 
-.art-session {
-  flex: 1; /* Make containers of the same scale */
-  max-width: 45%; /* Smaller size */
-  background-color: #f9f9f9; /* Background color */
-  padding: 20px; /* Padding inside the container */
-  border-radius: 8px; /* Rounded corners */
-  text-align: center; /* Center-align text */
+.art-sessions-container .new-container {
+    flex: 1;
+    max-width: 24%; /* Ensure all images are of the same scale */
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-.art-session img {
-  width: 100%; /* Full width */
-  height: 200px; /* Fixed height */
-  object-fit: cover; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners */
-  margin-bottom: 10px; /* Margin at the bottom */
-}
-
-.art-session h3 {
-  font-size: 1.2rem; /* Reduced font size */
-  margin-bottom: 30px; /* Margin at the bottom */
-}
-
-.art-session p {
-  font-size: 0.9rem; /* Reduced font size */
-  color: #333; /* Text color */
+.art-sessions-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
