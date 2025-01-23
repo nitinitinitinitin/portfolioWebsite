@@ -12,13 +12,6 @@ window.addEventListener('scroll', function () {
         headerContainer.classList.remove('transparent');
     }
 
-    // When scroll reaches the header's position, make nav links fixed
-    if (window.scrollY > header.offsetHeight) {
-        navLinks.classList.add('nav-fixed');
-    } else {
-        navLinks.classList.remove('nav-fixed');
-    }
-
     // Highlight the active link when scrolling through sections
     let currentSection = '';
     sections.forEach(section => {
@@ -39,45 +32,27 @@ window.addEventListener('scroll', function () {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
-  window.addEventListener('scroll', () => {
-    let current = '';
+    window.addEventListener('scroll', () => {
+        let current = '';
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.offsetHeight;
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute('id');
-      }
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
     });
-
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href').includes(current)) {
-        link.classList.add('active');
-      }
-    });
-  });
 });
-
-let currentIndex = 0;
-
-function moveSlide(direction) {
-    const track = document.querySelector('.slider-track');
-    const totalCards = document.querySelectorAll('.card').length;
-    const slideWidth = document.querySelector('.card').offsetWidth;
-
-    currentIndex += direction;
-
-    if (currentIndex < 0) {
-        currentIndex = totalCards - 1;
-    } else if (currentIndex >= totalCards) {
-        currentIndex = 0;
-    }
-
-    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-}
 
 
